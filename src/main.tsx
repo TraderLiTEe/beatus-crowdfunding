@@ -15,14 +15,14 @@ import { publicProvider } from "wagmi/providers/public";
 
 const { chains, provider } = configureChains(
   [
-    chain.polygonMumbai,
+    chain.polygon,
   ],
   [
   
     jsonRpcProvider({
       rpc: () => {
         return {
-          http: "https://rpc.ankr.com/polygon_mumbai",
+          http: "https://rpc.ankr.com/polygon",
         };
       },
     }),

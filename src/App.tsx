@@ -1,4 +1,5 @@
-
+import Campaigns from "./components/Campaigns";
+import CreateCampaign from "./components/CreateCampaign";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
 
@@ -29,13 +30,13 @@ function App() {
         <>
           <div className="flex gap-6 mt-8">
             <div className="flex flex-col">
-
+              <CreateCampaign />
             </div>
           </div>
 
           <div className="flex gap-6 mt-8">
             <div className="flex flex-col">
-              
+              <Campaigns />
             </div>
           </div>
         </>
